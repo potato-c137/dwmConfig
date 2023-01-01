@@ -1,0 +1,4 @@
+place dwmC at ~/dwm
+place xprofile at ~/.xprofile ( if you use sddm  else move it to ~/.xinitrc )
+place everything in usr to /usr/bin
+run the sh scripts to download the stuff needed
