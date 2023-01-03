@@ -3,35 +3,42 @@
 #=====================START====================================================
 
     #kill them incase of a restart
-    processes_=(picom dunst mpd xfce-polkit feh dwmbar.sh)
+    processes_=(picom dunst mpd xfce-polkit feh)
     for pros_ in "${processes_[@]}";do
         if [[ `pidof ${pros_}` ]];then
             killall -9 ${pros_} >/dev/null 2>&1
-       fi 
+       fi
    done
 
-    
-    #for feh ( wallpaper )
-     ~/.fehbg &  > "~/.config/dwm/logs/$(date)_fehbg.log"
 
-    
+
+    #for feh ( wallpaper )
+     ~/.fehbg &  > "~/dwm/logs/$(date)_fehbg.log"
+
+
     #dunstrc
-    dunst -config "/home/potatojs/dwm/dunstrc" > "~/.config/dwm/logs/$(date)_dunstrc.log"
-  
+    dunst -config "/home/potatojs/dwm/dunstrc" > "~/dwm/logs/$(date)_dunstrc.log"
+
 
     #for picom
-    picom --experimental-backends & > "~/.config/dwm/logs/$(date)_picom.log"
+    picom --experimental-backends & > "~/dwm/logs/$(date)_picom.log"
 
     #for mpd
-    mpd & >/dev/null 2>&1
+    mpd & 2>/dev/null
 
-    #dwmbar
-    dwmbar.sh &
 
     #for polykit
     if [[ ! `pidof xfce-polkit` ]];then
-        /usr/lib/xfce-polkit/xfce-polkit & 
+        /usr/lib/xfce-polkit/xfce-polkit &
     fi
 
+    #for handling sleep and stuff
+    xfce4-power-manager &
+
+   #dwmbar
+    killall -9 dwmbar.sh >/dev/null 2>&1
+    dwmbar.sh &
     
+    #call a terminal
+    [ -f /bin/tty-clock ] && st -e tty-clock -c & disown
 #=============================EXIT===================================================
