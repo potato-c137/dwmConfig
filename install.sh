@@ -1,5 +1,5 @@
 #!/bin/bash
-printf  "%s\n%s" "Before you install you should know the startup script depends on sddm/light" "It is placed in ~/.xprofile, if those arent found, the start script wont be called so configure mannually"
+printf  "%s\n%s\n" "Before you install you should know the startup script depends on sddm/light" "It is placed in ~/.xprofile, if those arent found, the start script wont be called so configure mannually"
 #colors
 col1='\e[31m'
 col2='\e[32m'
