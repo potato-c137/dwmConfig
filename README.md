@@ -19,7 +19,7 @@ this is an installer ( tested and working with only archlinux )
 | **bar**       | dwmbar( the og bar ) |
 | **wallpaper** | feh                  |
 
-> NB:: if you dont use sddm please try to autostart script in /Scipts/dwmC in your login manager
+> NB:: if you dont use sddm please try to call the autostart script in /Scipts/dwmC in your login manager
 
 ### More Info
 
