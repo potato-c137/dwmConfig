@@ -12,7 +12,9 @@ Install:
 
 ```
 
----
+# Maps
+
+in every folder there is a `Map.txt` that shows how everything is linked
 
 ## Screenshots
 
@@ -123,7 +125,7 @@ the st build in from my [st repo](https:///github.com/potato-c137/st)
 
 i use the dwmbar ( the one dwm came with )
 
-it is in `dwmConfig/Scripts/usr/` , make sure to move everything in Scripts/usr folder to `/usr/bin/` execpt the installers
+it is `dwmConfig/Scripts/usr/dwmbar.sh` , make sure to move everything in Scripts/usr folder to `/usr/bin/` execpt the installers
 
 the autostart script calls it so it needs to be in path
 
@@ -161,4 +163,12 @@ the call other config files in ./Scripts/dwmC/rofi/ which was to be placed in ~/
 
 **wallpaper was set with feh**
 
+<details><summary>Color Scheme Change</summary><p>
+To Change the color Scheme change the colors in
+1. color.h in st
+2. color.h in dwm
+3. rofi_menu_run & rofi_network_run
+4. dunstrc
+5. dwmbar.sh
+</p>
 </details>

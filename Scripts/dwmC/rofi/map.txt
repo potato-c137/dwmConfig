@@ -1,0 +1,12 @@
+MAP:
+.
+├── networkmenu_config.ini
+├── networkmenu.rasi
+└── simple-tokyonight.rasi
+
+1 directory, 3 files
+
+dependency levels:
+/usr/bin/rofi_network_run -> networkmenu_config.ini -> networkmenu.rasi
+
+/usr/bin/rofi_menu_run -> simple-tokyonight.rasi

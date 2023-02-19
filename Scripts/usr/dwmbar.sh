@@ -11,14 +11,13 @@ interval=0
 ## Cpu Info
 cpu_info() {
 	cpu_load=$(grep -o "^[^ ]*" /proc/loadavg)
-
-	printf "^c#3b414d^ ^b#71cbbd^ CPU"
-	printf "^c#abb2bf^ ^b#353b45^ $cpu_load"
+	printf "^c#3b414d^ ^b#1d9c1f^ CPU"
+    printf "^c#1d9c1f^ ^b#010201^ $cpu_load"
 }
 
 ## Memory
 memory() {
-	printf "^c#287690^^b#1e222a^   $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g) "
+	printf "^c#f2dca8^^b#010201^   $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g) "
 }
 
 ## Wi-fi
@@ -32,8 +31,8 @@ wlan() {
 
 ## Time
 clock() {
-	printf "^c#1e222a^^b#71cbbd^  "
-	printf "^c#1e222a^^b#b5e9d7^ $(date '+%a, %I:%M %p') "
+	printf "^c#13df10^^b#2a2946^  "
+	printf "^c#13df10^^b#2a2946^ $(date '+%a, %I:%M %p') "
 }
 
 ## Battery Info

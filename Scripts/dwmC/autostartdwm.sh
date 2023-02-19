@@ -13,15 +13,15 @@
 
 
     #for feh ( wallpaper )
-     ~/.fehbg &  > "~/dwm/logs/$(date)_fehbg.log"
+     ~/.fehbg &  
 
 
     #dunstrc
-    dunst -config "/home/potatojs/dwm/dunstrc" > "~/dwm/logs/$(date)_dunstrc.log"
+    dunst -config "/home/potatojs/dwm/dunstrc" 
 
 
     #for picom
-    picom --experimental-backends & > "~/dwm/logs/$(date)_picom.log"
+    picom --experimental-backends --corner-radius 15 --round-borders 15 --rounded-corners-exclude "class_g = 'dwm'" & 
 
     #for mpd
     mpd & 2>/dev/null
@@ -38,7 +38,7 @@
    #dwmbar
     killall -9 dwmbar.sh >/dev/null 2>&1
     dwmbar.sh &
-    
+
     #call a terminal
     [ -f /bin/tty-clock ] && st -e tty-clock -c & disown
 #=============================EXIT===================================================

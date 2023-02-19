@@ -1,0 +1,20 @@
+MAP:
+.
+├── dwmbar.sh
+├── dwmbar.sh_backup
+├── dwmDunstVol
+├── emojis
+├── rofi_menu_run
+└── rofi_network_run
+
+1 directory, 6 files
+dependency levels:
+
+dwm -> dwmbar.sh ( for the bar )
+
+dwm -> dwmDunstVol -> /bin/pactl ( for showing volume notification )
+
+dwm -> rofi_menu_run -> Desktop/dwm/rofi/tokyo_night.rasi ( for the search of applications )
+
+dwm -> rofi_network_run -> ^/network_menu.config ( for network )
+
