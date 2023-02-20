@@ -1,4 +1,7 @@
-~/dwm/autostartdwm.sh &
+
+if [[ $DESKTOP_SESSION = 'dwm' ]];then
+/usr/bin/autostartdwm.sh &
+fi
 
 
 

@@ -21,7 +21,7 @@
 
 
     #for picom
-    picom --experimental-backends --corner-radius 15 --round-borders 15 --rounded-corners-exclude "class_g = 'dwm'" & 
+    picom --experimental-backends --config "$HOME/dwm/picom.conf" & 
 
     #for mpd
     mpd & 2>/dev/null
