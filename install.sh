@@ -72,6 +72,6 @@ installing "feh"
 execsudo "pacman -S feh --noconfirm" || error_ "feh wasnt able to install" 
 
 printf "${col3}[*]  ${res}%s\n" "runing feh"
-[ -d $dir/wallpaper ] && cp $dir/wallpaper/wallpaper_green_theme.jpg ~/.wallpaper.jpg && feh --bg-scale ~/.wallpaper.jpg & disown || error_ "creating .fehbg failed"
+[ -d $dir/wallpaper ] && cp $dir/wallpaper/green.jpg ~/.wallpaper.jpg && feh --bg-scale ~/.wallpaper.jpg & disown || error_ "creating .fehbg failed"
 
 printf "${bold}${col1}[*]  ${bold}${res}%s\n" "Installation done"
