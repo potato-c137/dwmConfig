@@ -13,15 +13,16 @@
 
 
     #for feh ( wallpaper )
-     ~/.fehbg &  
+     ~/.fehbg &
 
 
     #dunstrc
-    dunst -config "/home/potatojs/dwm/dunstrc" 
+    dunst -config "/home/potatojs/dwm/dunstrc"
 
 
     #for picom
-    picom --experimental-backends --config "$HOME/dwm/picom.conf" & 
+    #remove the config file for auto-blur
+    picom --experimental-backends --config "$HOME/dwm/picom.conf" &
 
     #for mpd
     mpd & 2>/dev/null
