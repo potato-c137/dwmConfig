@@ -18,9 +18,9 @@ in every folder there is a `Map.txt` that shows how everything is linked
 
 ## Screenshots
 
-![shot1](./screenshots/shot1.png)
+![shot1](./screenshots/shot1_green.png)
 
-![shot2](./screenshots/shot2.png)
+![shot2](./screenshots/shot2_green.png)
 
 ---
 
