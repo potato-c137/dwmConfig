@@ -1,0 +1,6 @@
+place dwmC at ~/.dwm
+place xprofile at ~/.xprofile ( if you use sddm  else move it to ~/.xinitrc )
+place everything in usr to /usr/bin
+run the install.sh script and the install_libxft_brfga.sh to download the stuff needed
+autostart.sh is called at log in, and it calls all th rest of the stuff 
+all config files are placed in ~/.dwm 
